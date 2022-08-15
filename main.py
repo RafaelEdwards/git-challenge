@@ -37,5 +37,11 @@ def get_users_with_most_tweets(df):
     """
     return df.sort_values(by='user_id', ascending=False).iloc[0:10]
 
+def get_hastags(df):
+    """
+    Returns the 10 most used hastags in the dataframe
+    """
+    return df.sort_values(by='hashtags', ascending=False).iloc[0:10]
+
 
 main()
